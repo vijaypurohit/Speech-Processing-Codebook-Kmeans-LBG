@@ -1,0 +1,42 @@
+Assignment 4 – (K-means and LBG)
+Downlaod the universe file from the link : 
+https:
+
+-----------------------------------------------------
+K-Means step by step procedure (codebook size, k = 8 and universe size, M):
+1. Initialize m=0 and the codebook with random vectors from the universe. (Now you codebook has k vectors of 12 values each.
+2. for each of the vector in universe, assign it to the region based on nearest neighbor rule.
+3. calculate the total distortion, say dist, of all the regions. Take the average distortion, say av_dist = dist/M . (Use Tokhura distance)
+4. Calculate the centroid of each region and update the centroid for every region.
+5. m = m+1;
+6. perform the steps 2,3,4 till abs(distortion - dist) > delta. 
+distortion is the previous iteration distortion and dist is the current one. 
+(you can take delta value either 0.0001 or 0.00001)
+-------------------------------------------------------
+LBG step by step procedure (codebook size, k = 8 and universe size, M):
+1. Initialize the codebook with a single vector which is the centroid of the universe. (Now you codebook has 1 vector of 12 values).
+Following steps are repeated until the size of codebook=k.
+2. Double the size of codebook by following below step for each codebook entry:
+a) one vector will be obtained by Yi = Yi(1+epsilon)
+b) other vector will be obtained by Yi = Yi(1-epsilon)
+i ranges from 1 to p=12. (take epsilon = 0.03)
+3. Use k-means algorithm to get the best set of the centroids for split codebook (double of the size of previous step codebook).
+-------------------------------------------------------------------------
+Submission details:
+Upload the Handwritten code of both K-means and LBG by 27th September 2021 EOD.
+Naming convention : yourRollNo_kmeans_LBG.pdf
+Link to upload Handwritten code : 
+https:
+
+Upload Source code with all required files by 30th September 2021 EOD.
+Your project should contain a ReadMe file with proper instruction to execute your code.
+Your code should be properly commented and indented.
+Naming convention: yourRollNo_Assignment4.zip
+This file contains 3 things:
+yourRollNo_Kmeans
+yourRollNo_LBG
+Readme.txt
+
+**Please follow name convention properly.
+**Please don’t upload multiple times.
+Link to upload your assignment:\
