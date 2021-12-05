@@ -28,7 +28,7 @@
    * File Name:	fileNameUniverse[] = "Universe.csv"
    
 **Output:**  
-   * Output File consising of details of each iterations and Final CodeBook.
+ * Output File consising of details of each iterations and Final CodeBook.
    * Folder: filePathConsole[] = "output/"
    * File Name:	fileNameConsole[] = "lbg_output.txt"	
 
